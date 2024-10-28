@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <button id="displayBookDetailsButton" class="new-book-btn">New Book</button>
+    </div>
+
+    <div id="bookDetailsContainer" class="book-details" hidden>
+        <form id="bookForm">
+            <label for="titleInput">Title:</label>
+            <input id="titleInput" placeholder="Title" type="text" name="title" required>
+            
+            <label for="authorInput">Author:</label>
+            <input id="authorInput" placeholder="Author" type="text" name="author" required>
+        
+            <label for="pagesInput">Pages:</label>
+            <input id="pagesInput" placeholder="Pages" type="number" name="pages" required>
+      
+            <label for="readInput">Read:</label>
+            <input id="readInput" type="checkbox" name="read">
+
+            <button id="addBookButton" type="submit" onclick="">Add Book</button>
+          </form>          
+    </div>
+
+    <div id="addBookSuccessMessage" hidden>
+        <h1>New book has been added</h1>
+        <button class="close-book-added-btn">
+            Close
+        </button>
+    </div>
+
+    <div id="displayLibrary">
+
+    </div>
+
+</body>
+</html>
