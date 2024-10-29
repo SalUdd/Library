@@ -173,7 +173,7 @@ body {
     left: 3px;
     bottom: 3px;
     background-color: white;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     border-radius: 50%;
   }
   
